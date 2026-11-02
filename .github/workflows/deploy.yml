@@ -38,6 +38,8 @@ jobs:
 
       - name: Build site
         run: pnpm build
+        env:
+          BASE_PATH: /blog/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
