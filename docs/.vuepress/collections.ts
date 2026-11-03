@@ -33,22 +33,12 @@ const blog = defineCollection({
   link: '/blog/',
 })
 
-const demoDoc = defineCollection({
+const note = defineCollection({
   type: 'doc',
-  dir: 'demo',
-  linkPrefix: '/demo',
-  title: 'Demo',
-  sidebar: ['', 'foo', 'bar'],
-  // 根据文件结构自动生成侧边栏
-  // sidebar: 'auto',
-})
-
-const computerDoc = defineCollection({
-  type: 'doc',
-  dir: 'computer',
-  linkPrefix: '/computer/',
-  title: 'Computer',
+  dir: 'note',
+  linkPrefix: '/note/',
+  title: '笔记',
   sidebar: 'auto',
 })
 
-export default defineCollections([blog, demoDoc, computerDoc]);
+export default defineCollections([blog, note]);

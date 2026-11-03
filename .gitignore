@@ -28,3 +28,8 @@ Thumbs.db
 .env.*.local
 
 .workbuddy/
+
+# Local deploy scripts - contain server IP / paths, do NOT commit
+build.ps1
+deploy.sh
+deploy.cmd
